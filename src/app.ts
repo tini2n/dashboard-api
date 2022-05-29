@@ -33,7 +33,7 @@ export class App {
 		this.app.use(this.exceptionFilter.catch.bind(this.exceptionFilter));
 	}
 
-	public async init() {
+	public async init(): Promise<void> {
 		this.useRoutes();
 		this.useExceptionFilters();
 
