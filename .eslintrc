@@ -1,0 +1,42 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "rules": {
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/ban-types": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            {
+                "argsIgnorePattern": "^_",
+                "varsIgnorePattern": "^_",
+                "caughtErrorsIgnorePattern": "^_"
+            }
+        ],
+        "@typescript-eslint/explicit-function-return-type": [
+            "warn"
+        ],
+        "prettier/prettier": [
+            "error",
+            {
+                "singleQuote": true,
+                "trailingComma": "all",
+                "useTabs": true,
+                "semi": true,
+                "bracketSpacing": true,
+                "printWidth": 120,
+                "tabWidth": 4,
+                "quoteProps": "as-needed",
+                "jsxSingleQuote": true
+            }
+        ]
+    }
+}
