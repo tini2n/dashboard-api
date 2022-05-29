@@ -37,8 +37,6 @@ export class App {
 		this.useRoutes();
 		this.useExceptionFilters();
 
-		const test = ''
-
 		this.server = this.app.listen(this.port, () => {
 			this.logger.log(`Server running on http://localhost:${this.port}`);
 		});
